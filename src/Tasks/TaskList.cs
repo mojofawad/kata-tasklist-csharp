@@ -107,7 +107,7 @@ namespace Tasks
                 return;
             }
 
-            var task = new Task { Id = NextId(), Description = description };
+            var task = new Task(NextId(), description);
 
             projectTasks.Add(task);
         }
