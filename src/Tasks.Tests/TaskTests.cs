@@ -6,7 +6,7 @@ namespace Tasks.Tests;
 public class TaskTests
 {
     [Test]
-    public void NewTask_ShouldBeNoteDone()
+    public void NewTask_ShouldBeNotDone()
     {
         // Arrange and Act
         var task = new Task { Id = 1, Description = "Test task" };
