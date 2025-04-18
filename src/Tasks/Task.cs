@@ -1,12 +1,13 @@
+using System;
+
 namespace Tasks
 {
     public class Task
     {
         private readonly long _id;
-
         private readonly string _description;
-
         private bool _done;
+        private DateOnly? _deadline;
 
         public Task(long id, string description)
         {
@@ -19,6 +20,7 @@ namespace Tasks
         public long Id => _id;
         public string Description => _description;
         public bool Done => _done;
+        public DateOnly? Deadline => _deadline;
 
         public void MarkDone()
         {
@@ -28,6 +30,11 @@ namespace Tasks
         public void MarkNotDone()
         {
             _done = false;
+        }
+
+        public void SetDeadline(DateOnly deadline)
+        {
+            throw new NotImplementedException();
         }
     }
 }
