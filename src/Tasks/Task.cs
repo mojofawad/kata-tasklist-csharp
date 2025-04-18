@@ -2,29 +2,32 @@ namespace Tasks
 {
     public class Task
     {
-        public long Id { get; set; }
+        private readonly long _id;
 
-        public string Description { get; set; }
+        private readonly string _description;
 
-        private bool done;
-        
+        private bool _done;
+
         public Task(long id, string description)
         {
-            Id = id;
-            Description = description;
-            done = false;
+            _id = id;
+            _description = description;
+            _done = false;
         }
 
-        public bool Done => done;
+
+        public long Id => _id;
+        public string Description => _description;
+        public bool Done => _done;
 
         public void MarkDone()
         {
-            done = true;
+            _done = true;
         }
 
         public void MarkNotDone()
         {
-            done = false;
+            _done = false;
         }
     }
 }
