@@ -1,8 +1,7 @@
 using System;
-using System.IO;
 using NUnit.Framework;
 
-namespace Tasks
+namespace Tasks.Tests
 {
 	[TestFixture]
 	public sealed class ApplicationTest
