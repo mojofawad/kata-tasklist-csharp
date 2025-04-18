@@ -34,7 +34,7 @@ namespace Tasks
 
         public void SetDeadline(DateOnly deadline)
         {
-            throw new NotImplementedException();
+            _deadline = deadline;
         }
     }
 }
