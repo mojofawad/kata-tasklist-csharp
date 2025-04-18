@@ -10,6 +10,16 @@ namespace Tasks
         public string Description { get; set; }
 
         private bool done;
+
+        public Task()
+        {
+        }
+
+        public Task(long id, string description)
+        {
+            throw new NotImplementedException();
+        }
+        
         public bool Done => done;
 
         public void MarkDone()
