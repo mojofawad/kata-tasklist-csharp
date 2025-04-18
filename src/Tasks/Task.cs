@@ -7,11 +7,7 @@ namespace Tasks
         public string Description { get; set; }
 
         private bool done;
-
-        public Task()
-        {
-        }
-
+        
         public Task(long id, string description)
         {
             Id = id;

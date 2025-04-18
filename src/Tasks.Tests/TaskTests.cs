@@ -9,7 +9,7 @@ public class TaskTests
     public void NewTask_ShouldBeNotDone()
     {
         // Arrange and Act
-        var task = new Task { Id = 1, Description = "Test task" };
+        var task = new Task(1, "Test task");
         
         // Assert
         Assert.IsFalse(task.Done);
@@ -19,7 +19,7 @@ public class TaskTests
     public void MarkDone_ShouldSetDoneToTrue()
     {
         // Arrange
-        var task = new Task { Id = 1, Description = "Test task" };
+        var task = new Task(1, "Test task");
         
         // Act
         task.MarkDone();
@@ -32,7 +32,7 @@ public class TaskTests
     public void MarkNotDone_ShouldSetDoneToFalse()
     {
         // Arrange
-        var task = new Task { Id = 1, Description = "Test task" };
+        var task = new Task(1, "Test task");
         task.MarkDone();
         
         // Act
