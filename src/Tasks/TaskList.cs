@@ -135,8 +135,15 @@ namespace Tasks
                 return;
             }
 
-			identifiedTask.Done = done;
-		}
+            if (done)
+            {
+                identifiedTask.MarkDone();
+            }
+            else
+            {
+                identifiedTask.MarkNotDone();
+            }
+        }
 
         private void Help()
         {

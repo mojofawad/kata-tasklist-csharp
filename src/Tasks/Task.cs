@@ -9,16 +9,17 @@ namespace Tasks
 
 		public string Description { get; set; }
 
-		public bool Done { get; set; }
+		private bool done;
+		public bool Done => done;
 
 		public void MarkDone()
 		{
-			throw new NotImplementedException();
+			done = true;
 		}
 
 		public void MarkNotDone()
 		{
-			throw new NotImplementedException();
+			done = false;
 		}
 	}
 }
