@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Tasks
 {
     public class Task
@@ -17,9 +14,11 @@ namespace Tasks
 
         public Task(long id, string description)
         {
-            throw new NotImplementedException();
+            Id = id;
+            Description = description;
+            done = false;
         }
-        
+
         public bool Done => done;
 
         public void MarkDone()
